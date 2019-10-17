@@ -10,13 +10,10 @@
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
     - The ternary operator takes three operands. Ternary operators is used to simplify *if...else* statements like so:
     ```
-    {
       let isCorrect = true;
       isCorrect ?
       console.log('Correct!'):
       console.log('Incorrect!');
-    }
-    
     ```
 This code snippet declares a variable with the boolean value `true`. The ternary operator `?` takes the first operand `isCorrect` preceeding it and determines whether it is or *truthy* or *falsy*. If truthy, the operand to following it will be executed. Else, the operand following `:` will be executed.
 
@@ -25,14 +22,14 @@ This code snippet declares a variable with the boolean value `true`. The ternary
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
     - The seven JS data types are[^1]:
-      - Number: numbers, integers or decimals
-      - String: characters sorrounded by quotation marks
-      - Boolean: binary, true or false states
-      - Null: purposeful absense of data, analogous to an empty box
-      - Undefined: absense of data, analogous to no box where there should be
-      - Symbol: unique identifier
-      - Object: collection of related data
-    [^1]: The first 6 data types in this list are considered *primitive* for they are built in.
+      - Number: numbers, integers or decimals.
+      - String: characters sorrounded by quotation marks.
+      - Boolean: binary, true or false states.
+      - Null: purposeful absense of data, analogous to an empty box.
+      - Undefined: absense of data, analogous to no box where there should be.
+      - Symbol: unique identifier.
+      - Object: collection of related data.
+  [^1]: The first 6 data types in this list are considered *primitive* for they are built in.
 
 6. What does the code below return?
   ```javascript
