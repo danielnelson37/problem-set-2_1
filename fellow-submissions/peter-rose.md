@@ -72,12 +72,12 @@
     if ("false") --> true.
 
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
-  * `8 * null` 
-  * `"5" - 1`
-  * `"5" + 1`
-  * `true + false`
-  * `"i am" + undefined`
-  * `5 + undefined`
+  * `8 * null` // null to number. 8 * 0 = 0
+  * `"5" - 1` // String to number --> 4
+  * `"5" + 1` // Number to string --> 51
+  * `true + false` //booleans to numbers b/c of the + operator. true + false = 1. Same as 1 + 0 = 1. 
+  * `"i am" + undefined` //undefined to string. output = "i amundefined"
+  * `5 + undefined` // NaN, Js doesnt recoginize undefined as a number.
   * 
 
 12. What will each line of the following code return?
