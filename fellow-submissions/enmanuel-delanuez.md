@@ -21,7 +21,7 @@ This code snippet declares a variable with the boolean value `true`. The ternary
     - *Strict* equality operators only evaluate their operands if they are of the same data type. *Abstract*, or *non-strict* equality operators will coerce their operands to match data types as best it can before comparing.
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
-    - The seven JS data types are[^1]:
+    - The seven JS data types are:
       - Number: numbers, integers or decimals.
       - String: characters sorrounded by quotation marks.
       - Boolean: binary, true or false states.
@@ -29,28 +29,43 @@ This code snippet declares a variable with the boolean value `true`. The ternary
       - Undefined: absense of data, analogous to no box where there should be.
       - Symbol: unique identifier.
       - Object: collection of related data.
-  [^1]: The first 6 data types in this list are considered *primitive* for they are built in.
+  ---
+The first 6 data types in this list are considered *primitive* for they are built in.
 
 6. What does the code below return?
   ```javascript
   typeof 'i love marcy lab';
   ```
+This code returns 'string' because the unary operator `typeof` will evaluate the data type of the operand which is a set of characters inside quotation marks.
 
 7. What does the code below return?
   ```javascript
   typeof true;
   ```
+This code returns 'boolean' because the unary operator `typeof` will evaluate the data type of the operand which is a boolean state of true or false.
 
 8. What does the code below return?
   ```javascript
   typeof (10**9);
   ```
+This code returns 'number' because the unary operator `typeof` will evaluate the data type of the operand which is numbers that are themselves operands of a binary arithmatic exponential operator.
 
 9. What does the following code return? Why?
   ```javascript
   typeof null;
   ```
+This code returns 'null' because while `null` is not an object, this seems to be a bug in JS.
+
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
+    - *Truthy* and *falsy* are the inherit boolean values of different data types that come to light when other data types are converted or coerced to boolean. The six  *falsy* values that evaluate to `false` are:
+      - `false`: the boolean state itself
+      - `0`: zero
+      - `''` or `""`: an empty string
+      - `null`
+      - `undefined`
+      - `NaN`: not a number
+      ---
+Everything else evaluates to true.
 
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
   * `8 * null`
