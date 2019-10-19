@@ -49,19 +49,25 @@
     javascript
     typeof null;
     ```
-    The code returns the 
+    The code returns `object` because null has a 0 type tag that corresponds to an object. 
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
-    Being _truthy_ means that the value of the 
+    Being _truthy_ means that value is a value that is true and a _falsey_ is a value that evaluates to false. 
+    The six _falsy_ are false, null, undefined, "", 0, NaN, 
     
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
   * `8 * null`
-  * `"5" - 1`
+    The expression evaluates to `number` 0 as the value of null is coerced into the number 0 
+  * `"5" - 1` 
+    The expression evaluates to `number` 4
   * `"5" + 1`
+    The expression evaluates to `string` 51s
   * `true + false`
+    The expression evaluates to truefalse
   * `"i am" + undefined`
+    The expression evaluates to
   * `5 + undefined`
-
+    The expression evaluates to
 12. What will each line of the following code return?
     ```
     javascript
@@ -110,7 +116,6 @@
    ((false && undefined) || 'a' || '');
    ```
    `a`
-   
 
    ```
    javascript
