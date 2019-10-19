@@ -17,11 +17,13 @@
     ```
 
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
-    The `strict` equality operator does not allow for non-equal values to undergo coercion. 
+    The `strict` equality operator does not allow for non-equal values to undergo coercion.
+    While _non-strict_ equality operators allow for coercion to occur with different data types 
+    in order to execute the command. 
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
     The seven JavaScript data types are `number`, `string`, `boolean`, `null`, `undefined`,`symbol`.
-    All data types excluding `symbol` are considered primitive data types
+    All data types excluding `symbol` are considered primitive data types.
 
 6. What does the code below return?
     ```
@@ -53,21 +55,21 @@
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
     Being _truthy_ means that value is a value that is true and a _falsey_ is a value that evaluates to false. 
-    The six _falsy_ are false, null, undefined, "", 0, NaN, 
+    The six _falsy_ are `false`, `null`, `undefined`, `""`, `0`, `NaN`, 
     
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
   * `8 * null`
-    The expression evaluates to `number` 0 as the value of null is coerced into the number 0 
+    The expression evaluates to `number` 0 as the value of null is 0 and is multiplied by 8 through coercion the code executes to 0. 
   * `"5" - 1` 
-    The expression evaluates to `number` 4
+    The expression evaluates to `number` 4 because the math operand of subtraction causes the string value to be coerced into a number data type and then executes 5-1.  
   * `"5" + 1`
-    The expression evaluates to `string` 51s
+    The expression evaluates to `string` 51 due to string being the first value that is followed by '+' operand which is considered for concatenation instead of addition. 
   * `true + false`
-    The expression evaluates to truefalse
+    The expression evaluates to `number` 1 because true holds the value of 1 and false holds the value of 0, this would have the expression be 1 + 0 executing to 1. 
   * `"i am" + undefined`
-    The expression evaluates to
+    The expression evaluates to `string` i amundefined because undefined is coerced imto a string and the '+' opperand is considered concatenation. 
   * `5 + undefined`
-    The expression evaluates to
+    The expression evaluates to `NaN` since undefined has the value of not a number, no operation can be performed and NaN cannot be coerced . 
 12. What will each line of the following code return?
     ```
     javascript
