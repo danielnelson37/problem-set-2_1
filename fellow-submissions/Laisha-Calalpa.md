@@ -11,8 +11,8 @@
 
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
         The _ternary operator_ is a shorthand for an if else statement. 
-    ```
-    (weather === “sunny”)
+    ```javascript
+    let weather = “sunny”;
     weather ? console.log(“go outside!”) : console.log(“stay inside!”);
     ```
 
@@ -26,29 +26,25 @@
     All data types excluding `symbol` are considered primitive data types.
 
 6. What does the code below return?
-    ```
-    javascript
+    ```javascript
     typeof 'i love marcy lab';
     ```
     The code returns `string`.
 
 7. What does the code below return?
-    ```
-    javascript
+    ```javascript
     typeof true;
     ```
     The code returns `boolean`. 
 
 8. What does the code below return?
-    ```
-    javascript
+    ```javascript
     typeof (10**9);
     ```
     The code returns `number`.
 
 9. What does the following code return? Why?
-    ```
-    javascript
+    ```javascript
     typeof null;
     ```
     The code returns `object` because null has a 0 type tag that corresponds to an object. 
@@ -71,62 +67,52 @@
   * `5 + undefined`
     The expression evaluates to `NaN` since undefined has the value of not a number, no operation can be performed and NaN cannot be coerced . 
 12. What will each line of the following code return?
-    ```
-    javascript
+    ```javascript
     (false && undefined);
     ```
     `false`
 
-    ```
-    javascript
+    ```javascript
     (false || undefined);
     ```
     `undefined`
     
-   ```
-   javascript
+   ```javascript
    ((false && undefined) || (false || undefined));
    ```
    `undefined`
    
-   ```
-   javascript
+   ```javascript
    ((false || undefined) || (false && undefined));
    ```
    `false`
 
-   ```
-   javascript
+   ```javascript
    ((false && undefined) && (false || undefined));
    ```
     `false`
     
-   ```
-   javascript
+   ```javascript
    ((false || undefined) && (false && undefined));
    ```
    `undefined`
    
-   ```
-   javascript
+   ```javascript
    ('a' || (false && undefined) || '');
    ```
    `a`
 
-   ```
-   javascript
+   ```javascript
    ((false && undefined) || 'a' || '');
    ```
    `a`
 
-   ```
-   javascript
+   ```javascript
    ('a' && (false || undefined) && '');
    ```
    `undefined`
    
-   ```
-   javascript
+   ```javascript
    ((false || undefined) && 'a' && '');
    ```
    `undefined`
