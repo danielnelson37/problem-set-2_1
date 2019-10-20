@@ -2,7 +2,7 @@
 ## Types, Values, and Operators
 
 1. What is _unary operator_? Give an example of one.
-  - A unary operator is an operator that uses a single operand, such as a plus, dash, or exclamation point, to perform an operation. Example: i++;
+  - A unary operator is an operator that uses a single operand, such as a unary plus, or logical not, to perform an operation. Example: i++;
 
 2. What is a _binary operator_? Give an example of one.
   - A binary operator requires two operands to fulfill a condition. Example: 3 + 4;
