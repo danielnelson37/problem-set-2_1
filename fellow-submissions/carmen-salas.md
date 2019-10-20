@@ -134,4 +134,3 @@ This will return NaN, because undefined can not be coerced to a number, therefor
    ((false || undefined) && 'a' && '');
    ```
   Undefined will be returned. This is a logical AND operation, which will consider all operands to be true in order to return ‘true’.  Since the first operand is a logical OR operation, it will consider both operands in it’s a statement and if one of them is truthy or more than one, it will return the first truthy. If all operands in a logical OR operation are falsy it will return the last operand. Since all both operands were falsy it returned ‘undefined’ which was the last operand. Undefined is a falsy value and was the first falsy value in the logical AND operation which was imminently returned. 
-
