@@ -18,7 +18,7 @@
 This code snippet declares a variable with the boolean value `true`. The ternary operator `?` takes the first operand `isCorrect` preceeding it and determines whether it is or *truthy* or *falsy*. If truthy, the operand to following it will be executed. Else, the operand following `:` will be executed.
 
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
-    - *Strict* equality operators only evaluate their operands if they are of the same data type. *Abstract*, or *non-strict* equality operators will coerce their operands to match data types as best it can before comparing.
+    - *Strict* equality operators only evaluate to true if their operands are of the same data type and value. *Abstract*, or *non-strict* equality operators will coerce their operands to match data types as best it can before comparing values.
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
     - The seven JS data types are:
