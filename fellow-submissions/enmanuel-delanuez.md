@@ -9,7 +9,7 @@
 
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
     - The ternary operator takes three operands. Ternary operators is used to simplify *if...else* statements like so:
-    ```
+    ```javascript
       let isCorrect = true;
       isCorrect ?
       console.log('Correct!'):
