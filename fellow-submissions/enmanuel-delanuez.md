@@ -73,7 +73,7 @@ This code returns 'null' because while `null` is not an object, this seems to be
   * `"5" - 1`
     - Arithmatic operator `-` coerces `"5"` to the number 5 and returns `4`.
   * `"5" + 1`
-    - Arithmatic operator `+` coerces `"5"` to the number 5 and returns `6`.
+    - Arithmatic operator `+` will concatenate the operands into a single string containing `51`
   * `true + false`
     - Arithmatic operator `+` coerces `true` and `false` to the numbers 1 and 0 respectively and returns `1`.
   * `"i am" + undefined`
