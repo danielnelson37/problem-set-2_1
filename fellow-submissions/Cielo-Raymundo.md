@@ -2,13 +2,13 @@
 ## Types, Values, and Operators
 
 1. What is _unary operator_? Give an example of one.
-    A unary operator works with only one argument to change it's result
+    A unary operator works with only one operand to change it's result
         Ex:
             "!true"
             will output false
 
 2. What is a _binary operator_? Give an example of one.
-    A binary operator works with two arguments to change it's result
+    A binary operator works with two operands to change it's result
         Ex:
             "4+2" 
             will output 6 because it is taking in 4 and 2 as arguments and adding them to provide a result
@@ -22,13 +22,13 @@
                 This will output "No, four is not greater than 5", because the condition "4>5" is false
 
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
-    When using a _non-strict_ equality operator the two things that are being "compared" should have the same content but
+    When using a _non-strict_ equality operator the two things that are being "compared" should have the same value but
     can have different data types, it also uses a double equal sign "=="
         Ex:
             '5' == 5 
-            Will output true, even though the first argument is a string and the second is a number.It will automatically do
+            Will output true, even though the first value is a string and the second is a number.It will automatically do
             coercion and turn the string/number 5 to match the other 5
-    While the _strict_ equality operator requires both arguments to have the same data type and same content, it uses three 
+    While the _strict_ equality operator requires both values to have the same data type and same value, it uses three 
     equal signs "==="
         Ex: 
             '5'===5
@@ -67,10 +67,10 @@
   ```javascript
   typeof null;
   ```
-     It will return "object", because they have the same type tag
+     It will return "object", because there is a bug in JavaScript that makes them have the same type tag of 0.
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
-    _truthy_ is anything that when turned to a boolean value is true, while _falsy_ values is anything that when turned to a boolean
+    _truthy_ is anything that when coerced to a boolean value is true, while _falsy_ values is anything that when coerced to a boolean
     value it is false
     These are the falsy value:
         1)false 
@@ -83,7 +83,7 @@
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
   * `8 * null` : 0, null was coerced into 0 because it has an empty value
   * `"5" - 1` : 4, the string "5" was turned into a number because it is trying to subtract 1 from the string 5
-  * `"5" + 1` : 6, the string "5" was turned inot a number because it is trying to add 1 to the string 5
+  * `"5" + 1` : "51", the number 1 was coerced into a string because it is trying to append 1 to the string 5
   * `true + false` : 1, both true and flase boolean values are turned into numbers so that the addition operator can take place
   * `"i am" + undefined`: "i amundefined", because the addition sign is also used to append strings together and the first value is a string,
                           and the second is a falsy in order for it to be added it will have to turn into a string
