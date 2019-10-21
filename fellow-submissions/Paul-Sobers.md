@@ -2,19 +2,19 @@
 ## Types, Values, and Operators
 
 1. What is _unary operator_? Give an example of one.
-Answer: An _unary operator_ is an operator that takes one value. For example the logical operator (not !).
+Answer: A _unary operator_ is an operator that takes one operand. For example the logical operator (not !).
 
 2. What is a _binary operator_? Give an example of one.
-Answer: A _binary operator_ is an operator that takes two values. For example the logical operator (and &&).
+Answer: A _binary operator_ is an operator that takes two operands. For example the logical operator (and &&).
 
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
-Answer: We use the _ternary operator_ when we have 3 values and want to ask to return a value base on the boolean value on the left.
+Answer: We use the _ternary operator_ with 3 operands and want to ask a question(?) and return a value based on a condition.
 `console.log(true ? 1 : 2);`
 ` output:1`
 
 
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
-Answer: The difference between using _strict_ and _non-strict_ equality operators is we use _strict_ equality operator when performing comparison on operands  of the same type. We use _non-strict_ when comparing operands even if they are not of the same type.
+Answer: The difference between using _strict_ and _non-strict_ equality operators is we use _strict_ equality operator when comparing  on operands that must be the same type otherwise it will return false. We use _non-strict_ when comparing operands even if they are not of the same type and coerce to be the same type.
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
 Answer: The seven JavaScript data types are `Strings` ,`Number`,`Boolean`,`Null`,`Undefined`,`Object`,and `Symbol`. `Strings`,`Number`,`Boolean`,`Null`,`Undefined` are considered _primitive_.
@@ -47,12 +47,12 @@ Answer: This code will return : `'Object'` because since the first implementatio
 Answer: To be _truthy_  is a value that is considered to be true and _falsy_ is a value that is considered to false. Everything is considered true unless you set that value to false. The six values of _falsy_ are `False`,`0`,`""`,`null`,`undefined`,and `Nan`.
 
 11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
-  * `8 * null`  = 0 because null has a 0 value and 8 * 0 is 0.
-  * `"5" - 1`  = 4 because the substract operator recoginize the string'5' has a number and substracted the value.
-  * `"5" + 1` = "51" because the add operator does not recoginize the string'5' as a number and just puts the 2 values together.
-  * `true + false` = 1 because true has a vaule of 1 and false has a value of 0 so 1 + 0 = 1.
-  * `"i am" + undefined` = "i amundefined " because the add operator just place together because it is not 2 numbers.
-  * `5 + undefined` = NaN because undefined is falsey so it doesnt have a number value.
+  * `8 * null`  = 0 because null is coerced to 0 and 8 * 0 is 0.
+  * `"5" - 1`  = 4 because the substract operator coerces both operands to numbers before performing the operation.
+  * `"5" + 1` = "51". Because "5" is a string, the addition operator will coerce both operands to string and concatenate them.
+  * `true + false` = 1 because true is coerced to 1 and false is coerced 0 so 1 + 0 = 1.
+  * `"i am" + undefined` = "i amundefined " because "i am" is a string and the addition operator coerced them.
+  * `5 + undefined` = NaN because The addition operand will coerce undefined to a number. Undefined coerces to Nan. Anything plus undefined will return NaN.
 
 12. What will each line of the following code return?
   
