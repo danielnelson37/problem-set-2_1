@@ -2,7 +2,7 @@
 ## Types, Values, and Operators
 
 1. What is _unary operator_? Give an example of one.
-	A unary operator is a single argument that performs an operation. An example of this would be the 'typeof' operator which takes in an operand and returns the value. 
+	A unary operator is an operator that takes a single operand. An example of this would be the 'typeof' operator which takes in an operand and returns the value. 
 
 2. What is a _binary operator_? Give an example of one.
 	A binary operator takes in two operands to perform an operation. 
@@ -52,10 +52,10 @@ An example of this is arithmetic operators such as, -, /, %, *, which take in tw
   ```javascript
   typeof null;
   ```
-  This will return 'object' because null is the absence of data and 'object' stands for the beginning of JavaScript 
+  This will return 'object' because null is the absence of data and 'object' stands for the beginning of JavaScript. This is widely considered a bug in the JavaScript language.
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
-    When something is truthy it means it is not one of the six falsy values.
+    Truthy values evaluate to true, and it also means it is not one of the six falsy values.
     A falsy value is: 
         1.The boolean ‘false’
         2.The number 0
@@ -73,17 +73,16 @@ This will return 0 because it coerced null to the number 0 and any number multip
 This will return 4 because it coerced the string ‘5’ to the number 5 and 5-1 is 4. 
 
   * `"5" + 1`
-This will return ‘51’  because it coerced the number  1 to a string and added that value to the string ‘5’.
+This will return ‘51’  because it coerced the number  1 to a string, and it concatenated the two strings to a single string ‘51’.
 
   * `true + false`
 This will return the number 1 because the boolean ‘true’ is coerced to the number 1 and ‘false’ is coerced to the number 0 resulting in 1 + 0 which is 1. 
 
   * `"i am" + undefined`
-This will return ` ‘i amundefined’ ` since undefined is coerced to a string and is being added to the string ‘i am’.
+This will return ` ‘i amundefined’ ` since undefined is coerced to a string and it was concatenated with the string ‘i am’.
 
   * `5 + undefined`
-This will return NaN, because undefined can not be coerced to a number, therefore, 5+undefines is not a number. 
-
+This will return NaN, because undefined is coerced to NaN and anything added to NaN is NaN.
 12. What will each line of the following code return?
    ```javascript
    (false && undefined);
