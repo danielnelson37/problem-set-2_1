@@ -3,11 +3,11 @@
 
 1. What is _unary operator_? Give an example of one.
 
-  A unary operator like any operator performs an operation on some argument or operand. One example is the ++ operator which adds one to its operand.
+  A unary operator like any operator performs an operation on only one argument or operand. One example is the ++ operator which adds one to its operand.
 
 2. What is a _binary operator_? Give an example of one.
 
-  A binary operator AKA boolean operator is an operator that determines the binary value of the operand. One example is the "!"( not operator), which returns the opposite binary value of the operand's default value.  
+  A binary operator is an operator that operates on two operands. For example the `+` or `-` operators for math, they require a number on the left and right of them to operate. 
 
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
 
@@ -23,12 +23,12 @@
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
 
   The seven JavaScript data types are:
-   - strings //Primative
-   - numbers  //Primative
-   - null  //Primative
-   - undefined  //Primative
-   - boolean  //Primative
-   - symbols // Primative
+   - strings //Primitive
+   - numbers  //Primitive
+   - null  //Primitive
+   - undefined  //Primitive
+   - boolean  //Primitive
+   - symbols // Primitive
    - objects
 
 6. What does the code below return?
@@ -57,7 +57,7 @@
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
 
-   Truthy and falsy are the inherent boolean values of things in JavaScript. A truthy type is inherently true. While a falsy type is inherently false.
+   Truthy and falsy are the inherent boolean values of things in JavaScript. A truthy type always evaluates to true. While a falsy type always evaluates to false.
    
    Here are the six falsy values:
    - null
@@ -96,7 +96,7 @@
    ```javascript
    ((false || undefined) || (false && undefined));
    ```
-    undefined
+    false
 
    ```javascript
    ((false && undefined) && (false || undefined));
@@ -106,7 +106,7 @@
    ```javascript
    ((false || undefined) && (false && undefined));
    ```
-    false
+    undefined
    
    ```javascript
    ('a' || (false && undefined) || '');
