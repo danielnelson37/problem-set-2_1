@@ -14,7 +14,7 @@ Answer: We use the _ternary operator_ with 3 operands and want to ask a question
 
 
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
-Answer: The difference between using _strict_ and _non-strict_ equality operators is we use _strict_ equality operator when comparing  on operands that must be the same type otherwise it will return false. We use _non-strict_ when comparing operands even if they are not of the same type and coerce to be the same type.
+Answer: We use the strict equality operator when comparing on operands that must be the same type otherwise it will return false. We use non-strict comparison when comparing operands even if they are not of the same type. Non-strict equality will coerce both operands to be the same type.
 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
 Answer: The seven JavaScript data types are `Strings` ,`Number`,`Boolean`,`Null`,`Undefined`,`Object`,and `Symbol`. `Strings`,`Number`,`Boolean`,`Null`,`Undefined` are considered _primitive_.
