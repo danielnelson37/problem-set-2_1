@@ -33,8 +33,8 @@
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
 
     JavaScript is conprised of 2 main types of data, which are primitives, and objects. 
-    A primitive is simply a data type that is not an object, and has no methods. Usually these cannot be changed after they are initiazed.
-    The primitive data types are string, number, boolean, symbol , and undefined.
+    A primitive is simply a data type that is not an object, and has no methods. Usually these cannot be changed after they are initialized.
+    The primitive data types are string, number, boolean, symbol, null, and undefined.
 
 6. What does the code below return?
   ```javascript
