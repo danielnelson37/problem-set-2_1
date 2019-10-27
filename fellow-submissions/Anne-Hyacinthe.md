@@ -10,8 +10,10 @@
 3. When do we use the _ternary operator_? Use a code snippet to illustrate below?
     * A _ternary operator_ is used when a condition is short enough to logically fit into one line
  
-    ex:var num = 4 , msg="";
+    ```var num = 4 , msg="";
        msg=(num === 4) ? "correct" : "incorrect";
+    ```
+       
 4. What is the difference between using the _strict_ and _non-strict_ equality operators?
     *The difference is that the _non-strict_ equality operator will use coercion to compare values while the _strict_ equality operator will not use coercion and read it as is. 
 5. What are the seven JavaScript data types? Which of these are considered _primitive_?
