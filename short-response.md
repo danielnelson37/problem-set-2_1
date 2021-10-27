@@ -33,7 +33,7 @@
 
 10. What does it mean to be _truthy_ or _falsy_? What six values are _falsy_?
 
-11. Evaluate the following expressions using JavaScripts implicit coercion rules. Then, in one sentence, explain what coercions were applied and why:
+11. Evaluate the following expressions using JavaScripts implicit coercion rules. For each example, in one sentence, explain what coercions were applied and why:
   * `8 * null`
   * `"5" - 1`
   * `"5" + 1`
