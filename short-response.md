@@ -50,6 +50,10 @@
    ```javascript
    (false || undefined);
    ```
+   
+   ```javascript
+   (undefined || false);
+   ```
 
    ```javascript
    ((false && undefined) || (false || undefined));
