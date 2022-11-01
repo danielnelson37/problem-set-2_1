@@ -1,7 +1,7 @@
 # Problem Set 2.1
 ## Types, Values, and Operators
 
-1. What is _unary operator_? Give an example of one.
+1. What is a _unary operator_? Give an example of one.
 
 2. What is a _binary operator_? Give an example of one.
 
